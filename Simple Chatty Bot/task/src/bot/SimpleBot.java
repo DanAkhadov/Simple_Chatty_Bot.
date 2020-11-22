@@ -17,7 +17,7 @@ public class SimpleBot {
     static void greet(String assistantName, String birthYear) {
         System.out.println("Hello! My name is " + assistantName + ".");
         System.out.println("I was created in " + birthYear + ".");
-        System.out.print("Please, remind me your name: ");
+        System.out.println("Please, remind me your name: ");
     }
 
     static void remindName() {
@@ -27,7 +27,7 @@ public class SimpleBot {
 
     static void guessAge() {
         System.out.println("Let me guess your age.");
-        System.out.print("Enter remainders of dividing your age by 3, 5 and 7: ");
+        System.out.println("Enter remainders of dividing your age by 3, 5 and 7: ");
         int rem3 = scanner.nextInt();
         int rem5 = scanner.nextInt();
         int rem7 = scanner.nextInt();
@@ -36,7 +36,7 @@ public class SimpleBot {
     }
 
     static void count() {
-        System.out.print("Now I will prove to you that I can count to any number you want: ");
+        System.out.println("Now I will prove to you that I can count to any number you want: ");
         int num = scanner.nextInt();
         for (int i = 0; i <= num; i++) {
             System.out.printf("%d!\n", i);
@@ -48,17 +48,18 @@ public class SimpleBot {
         System.out.println("The cutest baby in the world?");
         System.out.println("1. Eva.");
         System.out.println("2. Daniyal.");
-        System.out.print("Input your answer: ");
+        System.out.println("Input your answer: ");
         int yourAnswer = scanner.nextInt();
 
         while (yourAnswer != 1) {
-            System.out.print("Please, try again: ");
+            System.out.println("Please, try again: ");
             yourAnswer = scanner.nextInt();
         }
     }
 
 
     static void end() {
+
         System.out.println("Congratulations, have a nice day!"); // Do not change this text
     }
 }
